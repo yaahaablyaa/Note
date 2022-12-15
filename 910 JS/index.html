@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <h1>Dashboard</h1>
+            <button class="up">Добавить задачу</button>
+        </div>
+        <div class="right">
+            <input type="text" placeholder="Поиск по задачам" class="search">
+        </div>
+    </header>
+    <div class="tablo">
+        <div>
+            <span>Показать задачи как:</span>
+            <span data-table="true" class="toggler">Таблица</span>
+            <span data-table="false" class="toggler">Плитка</span>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Заголовок задачи</th>
+                <th>Описание задачи</th>
+                <th>Дата</th>
+                <th>Время</th>
+                <th>Выполнено</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Заголовок задачи</td>
+                <td>Описание задачи</td>
+                <td>Дата</td>
+                <td>Время</td>
+                <td>Выполнено</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="container">
+        <!-- <div> -->
+            <!-- <h1>sdfsdfs</h1>
+            <p>sdfsdf</p>
+            <span>asd</span> -->
+        <!-- </div>  -->
+    </div>
+
+    <div class="modal_bg"></div>
+    <div class="modal">
+        <form name="mod">
+            <h1>Добавить</h1>
+            <input type="text" name="task" placeholder="Заголовок">
+            <input type="text" name="task" placeholder="Описание">
+            <input type="text" name="task" placeholder="Время (type=time)">
+            <input type="text" name="task" placeholder="Время (type=date)">
+            <input type="text" name="task" placeholder="Тип задачи (select - option - new/progress/done)">
+            <button>Добавить</button>
+        </form>
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
